@@ -10,18 +10,42 @@
 </head>
 
 <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">GreenWise</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#chatbot">Chat with Clover</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About Clover</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#upload">Upload Files</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
     <!-- Header Section -->
-    <header class="bg-success text-white text-center py-2 mb-3">
+    <header class="bg-success text-white text-center py-3 mb-3">
         <h1>Welcome to GreenWise</h1>
         <p>Learn how to live sustainably on a budget!</p>
     </header>
 
     <!-- Main Content Section -->
     <main class="container h-75">
+        <!-- How Clover Helps Section -->
         <section>
             <h2>How can Clover help you?</h2>
-            <p>Ask Clover for tips on reducing your carbon footprint, saving money on sustainable products, and much
-                more!</p>
+            <p>Ask Clover for tips on reducing your carbon footprint, saving money on sustainable products, and much more!</p>
         </section>
 
         <!-- Chatbot Section -->
@@ -35,9 +59,55 @@
                 frameBorder="0"></iframe>
             <div id="pickaxe-input-box-Clover_7OLP8"></div>
         </section>
+
+        <!-- About Clover Section -->
+        <section id="about" class="my-5">
+            <h3>About Clover</h3>
+            <p>Clover is here to guide you in living sustainably without breaking the bank. Whether it's reducing waste, switching to greener products, or saving on energy costs, Clover offers practical, budget-friendly advice that helps you make a positive environmental impact.</p>
+        </section>
+
+        <!-- File Upload Section -->
+        <section id="upload" class="my-5">
+            <h3>Upload Files for Sustainability Tips</h3>
+            <p>Upload your documents, receipts, or spending lists, and Clover will analyze them to give you personalized suggestions on how to be more sustainable on a budget.</p>
+            <input type="file" id="file-upload" class="form-control" />
+            <button class="btn btn-success mt-3" id="upload-btn">Analyze My File</button>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="my-5">
+            <h3>User Testimonials</h3>
+            <div class="carousel slide" id="testimonialCarousel" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <p class="testimonial-text">"Clover helped me reduce my energy bills by suggesting small but impactful changes like using fans instead of air conditioning. My budget has never been better!"</p>
+                    </div>
+                    <div class="carousel-item">
+                        <p class="testimonial-text">"I never knew how much I could save by switching to reusable products. Clover's advice on sustainable shopping is spot on!"</p>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
     </main>
 
+    <!-- Footer Section -->
+    <footer class="bg-dark text-white text-center py-4">
+        <p>&copy; 2024 GreenWise | Learn how to live sustainably on a budget!</p>
+        <a href="#" class="text-white">Privacy Policy</a> | <a href="#" class="text-white">Terms of Service</a>
+    </footer>
+
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"></script>
 </body>
 
 </html>
